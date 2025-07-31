@@ -1,10 +1,9 @@
 const body = document.body;
-let slider = document.getElementById("theme-slider");
-let input = document.querySelector("input[type='text']");
+const slider = document.getElementById("theme-slider");
+const input = document.querySelector("input[type='text']");
 const buttons = document.querySelectorAll("button");
 
 let str = '';
-let lastValidChar = "";
 const themes = ["theme-one", "theme-two", "theme-three"];
 const validExpression = /^-?\d+(\.\d+)?([+\-*/]-?\d+(\.\d+)?)*$/;
 
