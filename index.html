@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/output.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body class="theme-one justify-center items-center min-h-screen flex bg-[var(--main-bg)]">
+  <main class="min-w-[320px] p-4 flex flex-col gap-y-6">
+    <section class="flex justify-between items-center text-[var(--input-text)]">
+      <h1 class="text-3xl">Calc</h1>
+      <div class="flex items-center gap-4">
+        <span class="uppercase">Theme</span>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex justify-around w-20">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <input
+            class="w-20 h-6 px-[6px] bg-[var(--keypad-bg)] appearance-none rounded-xl cursor-pointer slider-thumb"
+            type="range" id="theme-slider" min="1" max="3" value="1" step="1">
+        </div>
+      </div>
+    </section>
+    <section>
+      <input type="text"
+        class="w-full h-28 px-4 bg-[var(--screen-bg)] caret-w rounded-md text-[var(--input-text)] max-w-[370px] sm:max-w-[510px] break-words resize-none text-4xl text-right focus:outline-none">
+    </section>
+    <section
+      class="bg-[var(--keypad-bg)] p-6 rounded-xl text-[var(--secondary-text)] grid grid-rows-5 grid-cols-4 gap-y-5 gap-x-4 sm:gap-y-6">
+      <button data-value="7" class="button primary-button">7</button>
+      <button data-value="8" class="button primary-button">8</button>
+      <button data-value="9" class="button primary-button">9</button>
+      <button data-value="Del" class="button secondary-key max-[365px]:text-lg">Del</button>
+      <button data-value="4" class="button primary-button">4</button>
+      <button data-value="5" class="button primary-button">5</button>
+      <button data-value="6" class="button primary-button">6</button>
+      <button data-value="+" class="button primary-button">+</button>
+      <button data-value="1" class="button primary-button">1</button>
+      <button data-value="2" class="button primary-button">2</button>
+      <button data-value="3" class="button primary-button">3</button>
+      <button data-value="-" class="button primary-button">-</button>
+      <button data-value="." class="button primary-button">.</button>
+      <button data-value="0" class="button primary-button">0</button>
+      <button data-value="/" class="button primary-button">/</button>
+      <button data-value="*" class="button primary-button">x</button>
+      <button data-value="Reset" class="col-span-2 secondary-key button">Reset</button>
+      <button data-value="=" class="col-span-2 button accent-key">=</button>
+    </section>
+    <span class="text-[var(--input-text)] text-xl text-center">World's Most Powerful Calculator <br> 😆😂🤣</span>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
